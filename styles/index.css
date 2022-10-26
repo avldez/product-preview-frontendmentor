@@ -1,0 +1,128 @@
+:root {
+    /* Primary */
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 30px 20px;
+    background-color: var(--cream);
+    font-size: 14px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+main {
+    background-color: var(--white);
+
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    max-width: 336px;
+}
+
+main .product-pict {
+    background-image: url('../images/image-product-mobile.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 235px;
+
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+main .product-detail {
+    padding: 20px;
+}
+
+main .product-detail h4 {
+    letter-spacing: 5px;
+    color: var(--darkGrayishBlue);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+main .product-detail h1 {
+    margin-top: 15px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+main .product-detail p {
+    margin-top: 15px;
+    color: var(--darkGrayishBlue);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 23px;
+}
+
+main .product-detail > div {
+    display: flex;
+    margin-top: 18px;
+}
+
+main .product-detail div .price-now {
+    color: var(--darkCyan);
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+main .product-detail div .price-before {
+    color: var(--darkGrayishBlue);
+    font-size: 12px;
+    margin-left: 20px;
+    padding-top: 10px;
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main .product-detail button {
+    background-color: var(--darkCyan);
+    border-radius: 5px;
+    border-style: none;
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 95%;
+    height: 3.6em;
+
+    margin-top: 15px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+main .product-detail button:hover {
+    cursor: pointer;
+    background-color: var(--veryDarkBlue);
+}
+
+main .product-detail button span {
+    display: inline-block;
+    height: 19px;
+}
